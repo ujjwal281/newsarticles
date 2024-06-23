@@ -8,7 +8,6 @@ export const getArticles = createAsyncThunk('articles/getArticles', async ({ cat
     }
 );
 
-
 const articleSlice = createSlice({
     name: 'articles',
     

@@ -23,7 +23,7 @@ const ArticleList = () => {
         <div>
             <CategoryFilter />
             {status === 'loading' && <p className='flex justify-center items-center'><CircularProgress/></p>}
-            {status === 'failed' && <p>Error loading articles.</p>}
+            {status === 'failed' && <p className='flex justify-center items-center'>Error loading articles.</p>}
             <div className="article-list">
                 {articles.map(article => (
                     <Article key={article.url} article={article} />
